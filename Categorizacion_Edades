@@ -1,0 +1,25 @@
+package Estructura_de_control_selectiva;
+
+import java.util.Scanner;
+
+public class Categorizacion_Edades {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escriba su edad:");
+		 int edad = sc.nextInt();
+		 
+		 if (edad<12) {
+				System.out.println("Usted es Infante.");
+		 } else if (edad>=12 && edad<=17 ) {
+			 System.out.println("Usted es Adolescente.");
+		 } else if (edad>=18 && edad<=60) {
+			 System.out.println("Usted es Adulto.");
+		 } else {
+			 System.out.println("Usted es Anciano.");
+		 }
+
+	}
+
+}
