@@ -1,0 +1,17 @@
+package Estructura_de_control_de_repeticion;
+
+import java.util.Scanner;
+
+public class Suma_Acumulativa {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int numero;
+		int suma = 0;
+		System.out.println("Introduzca un número entero cualquiera: ");
+		numero = sc.nextInt();
+		for(int i = 1; i<=numero; i++) {
+			suma = suma +i;
+		}
+		System.out.println("La suma de todos los numeros desde 1 a "+numero+" es: "+suma);
+	}
+}
